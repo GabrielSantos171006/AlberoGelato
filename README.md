@@ -24,3 +24,126 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 <img width="1920" height="1080" alt="Wireframe Flowchart Whiteboard in Purple Violet Adjacent Colour Blocks Style" src="https://github.com/user-attachments/assets/007c326c-f152-484e-aaf9-082469a013c1" />
 
 <hr>
+
+
+### CÓDIGO
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Wireframe</title>
+    </head>
+
+
+    <body>
+
+    <!-- Cabeçalho com logo e menu -->
+    <header>
+
+    <div>Logo</div>
+
+    <nav>
+        <a href="#">Sobre nós</a>
+        <a href="#">Produtos</a>
+    </nav>
+
+    </header>
+
+
+    <!-- Banner com imagem central -->
+    <section class="banner">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="90">
+
+    </section>
+
+
+    <!-- Seção Sobre nós -->
+    <section class="sobre">
+
+        <h1>Sobre nós</h1>
+
+        <div class="sobre-conteudo">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="60">
+
+        <div class="textos">
+
+        <div>
+            <h3>História</h3>
+
+            <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ut totam deserunt debitis labore temporibus vero atque in necessitatibus cum. Qui, fugiat quibusdam? Necessitatibus qui expedita, aspernatur eveniet quibusdam aliquam.
+            </p>
+    </div>
+
+    <div>
+        <h3>Técnicas</h3>
+
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, unde natus! Quibusdam corrupti ipsam, molestiae alias cumque aspernatur cupiditate dolore magnam recusandae quam consequatur maxime repellat soluta, tenetur eius vero!
+        </p>
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- Seção Produtos -->
+    <section class="produtos">
+
+        <h1>Produtos</h1>
+
+        <div class="cards">
+
+            <div class="card">
+            <div class="box"></div>
+                <p>Produto x</p>
+            </div>
+
+            <div class="card">
+            <div class="box"></div>
+            <p>Produto y</p>
+        </div>
+
+        <div class="card">
+        <div class="box"></div>
+            <p>Produto z</p>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer>
+
+        <div>Logo</div>
+
+        <div>
+            Rua: xxxx, yy – CEP: 1111-111
+        </div>
+
+        <div class="redes">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
+        </div>
+
+    </footer>
+
+
+    </body>
+</html>
+
+
+### TUTORIAL
+
