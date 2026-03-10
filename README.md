@@ -28,6 +28,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
 ### CÓDIGO
 
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -143,7 +144,82 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
     </body>
 </html>
-
+```
 
 ### TUTORIAL
 
+Estrutura do documento
+
+O código começa definindo que o documento utiliza HTML5 e que o idioma da página é português do Brasil.
+Dentro da estrutura principal do HTML existem duas partes importantes:<br>
+	    <br>- head: contém informações internas da página, como a codificação de caracteres e o título que aparece na aba do navegador.
+	    <br>- body: contém todo o conteúdo visível do site.
+        <br>
+        <br>
+Cabeçalho (Header)
+
+O header representa o topo da página.
+Nele estão dois elementos principais:<br>
+	<br>- Logo: espaço reservado para o nome ou imagem da empresa.
+	<br>- Menu de navegação (nav): contém os links para as seções “Sobre nós” e “Produtos”.
+
+Esses links permitem a navegação dentro do site.
+<br>
+<br>
+
+Banner
+
+A primeira seção da página funciona como um banner principal, contendo uma imagem central.
+Essa área serve para destacar visualmente o início do site.
+
+<br>
+<br>
+Seção “Sobre nós”
+
+Essa seção apresenta informações sobre a empresa.
+
+Ela contém:<br>
+	<br>- um título principal
+	<br>- um ícone ilustrativo
+	<br>- dois blocos de conteúdo:
+	<br>- História: explica a origem ou trajetória da empresa.
+	<br>- Técnicas: descreve métodos ou formas de trabalho.
+
+Os textos utilizam parágrafos para organizar a leitura.
+<br>
+<br>
+
+Seção “Produtos”
+
+Essa área apresenta os produtos oferecidos.
+
+A estrutura possui três blocos (cards), cada um representando um produto.
+Cada produto possui:<br>
+	<br>- um espaço para imagem
+	<br>- o nome do produto
+
+Essa organização facilita a visualização e comparação dos itens.
+
+<br>
+<br>
+Rodapé (Footer)
+
+O footer representa o rodapé da página.
+
+Ele contém:
+	<br>- o logo da empresa o endereço ícones de redes sociais (Instagram, Facebook e WhatsApp)
+
+O rodapé geralmente reúne informações institucionais e formas de contato.
+<br>
+<br>
+
+Organização da página
+
+O site segue uma estrutura simples e organizada: <br>
+	<br>1.	Header – logo e menu
+	<br>2.	Banner – imagem principal
+	<br>3.	Sobre nós – informações da empresa
+	<br>4.	Produtos – exibição dos produtos
+	<br>5.	Footer – endereço e redes sociais
+
+Essa organização ajuda a manter o site claro e fácil de navegar.
