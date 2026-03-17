@@ -24,3 +24,202 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 <img width="1920" height="1080" alt="Wireframe Flowchart Whiteboard in Purple Violet Adjacent Colour Blocks Style" src="https://github.com/user-attachments/assets/007c326c-f152-484e-aaf9-082469a013c1" />
 
 <hr>
+
+
+### CÓDIGO
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Wireframe</title>
+    </head>
+
+
+    <body>
+
+    <!-- Cabeçalho com logo e menu -->
+    <header>
+
+    <div>Logo</div>
+
+    <nav>
+        <a href="#">Sobre nós</a>
+        <a href="#">Produtos</a>
+    </nav>
+
+    </header>
+
+
+    <!-- Banner com imagem central -->
+    <section class="banner">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="90">
+
+    </section>
+
+
+    <!-- Seção Sobre nós -->
+    <section class="sobre">
+
+        <h1>Sobre nós</h1>
+
+        <div class="sobre-conteudo">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="60">
+
+        <div class="textos">
+
+        <div>
+            <h3>História</h3>
+
+            <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ut totam deserunt debitis labore temporibus vero atque in necessitatibus cum. Qui, fugiat quibusdam? Necessitatibus qui expedita, aspernatur eveniet quibusdam aliquam.
+            </p>
+    </div>
+
+    <div>
+        <h3>Técnicas</h3>
+
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, unde natus! Quibusdam corrupti ipsam, molestiae alias cumque aspernatur cupiditate dolore magnam recusandae quam consequatur maxime repellat soluta, tenetur eius vero!
+        </p>
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- Seção Produtos -->
+    <section class="produtos">
+
+        <h1>Produtos</h1>
+
+        <div class="cards">
+
+            <div class="card">
+            <div class="box"></div>
+                <p>Produto x</p>
+            </div>
+
+            <div class="card">
+            <div class="box"></div>
+            <p>Produto y</p>
+        </div>
+
+        <div class="card">
+        <div class="box"></div>
+            <p>Produto z</p>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer>
+
+        <div>Logo</div>
+
+        <div>
+            Rua: xxxx, yy – CEP: 1111-111
+        </div>
+
+        <div class="redes">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
+        </div>
+
+    </footer>
+
+
+    </body>
+</html>
+```
+
+### TUTORIAL
+
+Estrutura do documento
+
+O código começa definindo que o documento utiliza HTML5 e que o idioma da página é português do Brasil.
+Dentro da estrutura principal do HTML existem duas partes importantes:<br>
+	    <br>- head: contém informações internas da página, como a codificação de caracteres e o título que aparece na aba do navegador.
+	    <br>- body: contém todo o conteúdo visível do site.
+        <br>
+        <br>
+Cabeçalho (Header)
+
+O header representa o topo da página.
+Nele estão dois elementos principais:<br>
+	<br>- Logo: espaço reservado para o nome ou imagem da empresa.
+	<br>- Menu de navegação (nav): contém os links para as seções “Sobre nós” e “Produtos”.
+
+Esses links permitem a navegação dentro do site.
+<br>
+<br>
+
+Banner
+
+A primeira seção da página funciona como um banner principal, contendo uma imagem central.
+Essa área serve para destacar visualmente o início do site.
+
+<br>
+<br>
+Seção “Sobre nós”
+
+Essa seção apresenta informações sobre a empresa.
+
+Ela contém:<br>
+	<br>- um título principal
+	<br>- um ícone ilustrativo
+	<br>- dois blocos de conteúdo:
+	<br>- História: explica a origem ou trajetória da empresa.
+	<br>- Técnicas: descreve métodos ou formas de trabalho.
+
+Os textos utilizam parágrafos para organizar a leitura.
+<br>
+<br>
+
+Seção “Produtos”
+
+Essa área apresenta os produtos oferecidos.
+
+A estrutura possui três blocos (cards), cada um representando um produto.
+Cada produto possui:<br>
+	<br>- um espaço para imagem
+	<br>- o nome do produto
+
+Essa organização facilita a visualização e comparação dos itens.
+
+<br>
+<br>
+Rodapé (Footer)
+
+O footer representa o rodapé da página.
+
+Ele contém:
+	<br>- o logo da empresa o endereço ícones de redes sociais (Instagram, Facebook e WhatsApp)
+
+O rodapé geralmente reúne informações institucionais e formas de contato.
+<br>
+<br>
+
+Organização da página
+
+O site segue uma estrutura simples e organizada: <br>
+	<br>1.	Header – logo e menu
+	<br>2.	Banner – imagem principal
+	<br>3.	Sobre nós – informações da empresa
+	<br>4.	Produtos – exibição dos produtos
+	<br>5.	Footer – endereço e redes sociais
+
+Essa organização ajuda a manter o site claro e fácil de navegar.
