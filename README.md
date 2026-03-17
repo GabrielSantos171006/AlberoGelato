@@ -228,7 +228,7 @@ footer{
     margin-left:10px;
 }
 ```
-### TUTORIAL
+### TUTORIAL HTML
 
 Estrutura do documento
 
@@ -305,3 +305,64 @@ O site segue uma estrutura simples e organizada: <br>
 	<br>5.	Footer – endereço e redes sociais
 
 Essa organização ajuda a manter o site claro e fácil de navegar.
+
+### TUTORIAL CSS
+
+Estilo geral
+
+Define a fonte Arial e remove margens do navegador para deixar o layout limpo.
+<br>
+<br>
+
+Header
+
+Usa Flexbox para alinhar:<br>
+<br>- logo à esquerda
+<br>- menu à direita
+
+Os links recebem espaçamento, cor preta e sem sublinhado.
+<br>
+<br>
+
+Banner
+
+Centraliza a imagem e adiciona fundo cinza e espaçamento para destaque.
+<br>
+<br>
+
+Sobre nós
+
+Organiza os elementos lado a lado com Flexbox:
+<br>- ícone + textos
+<br>- História e Técnicas ficam em colunas
+<br>
+<br>
+
+Produtos
+
+Exibe os produtos em linha com Flexbox.
+
+Cada produto:<br>
+<br>- fica centralizado
+<br>- possui uma caixa (imagem) e nome
+<br>
+<br>
+
+Footer
+
+Alinha logo, endereço e redes sociais em uma linha usando Flexbox.
+<br>
+<br>
+
+Redes sociais
+
+Define tamanho dos ícones e espaçamento entre eles.
+<br>
+<br>
+
+Resumo geral
+
+O CSS usa principalmente Flexbox para:
+<br>- alinhar elementos
+<br>- criar espaçamentos
+<br>- organizar o layout conforme o wireframe
