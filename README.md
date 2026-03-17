@@ -26,7 +26,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 <hr>
 
 
-### CÓDIGO
+### CÓDIGO HTML
 
 ```html
 <!DOCTYPE html>
@@ -146,6 +146,86 @@ Este projeto tem como ação extensionista promover a integração entre os conh
     </body>
 </html>
 ```
+
+# CÓDIGO CSS
+
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#ddd;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:black;
+}
+
+/* BANNER */
+.banner{
+    background:#ddd;
+    text-align:center;
+    padding:60px;
+}
+
+/* SOBRE */
+.sobre{
+    padding:40px;
+}
+
+.sobre-conteudo{
+    display:flex;
+    align-items:flex-start;
+    gap:60px;
+}
+
+.textos{
+    display:flex;
+    gap:60px;
+}
+
+/* PRODUTOS */
+.produtos{
+    padding:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:space-around;
+    margin-top:40px;
+}
+
+.card{
+    text-align:center;
+}
+
+.box{
+    width:150px;
+    height:150px;
+    border:3px solid #999;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.redes img{
+    width:30px;
+    margin-left:10px;
+}
 
 ### TUTORIAL
 
