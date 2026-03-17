@@ -35,6 +35,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
     <head>
         <meta charset="UTF-8">
         <title>Wireframe</title>
+		<link rel="stylesheet" href="style.css">
     </head>
 
 
