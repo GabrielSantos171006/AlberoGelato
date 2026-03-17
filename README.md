@@ -149,6 +149,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
 ### CÓDIGO CSS
 
+```
 body{
     font-family: Arial;
     margin:0;
@@ -226,7 +227,7 @@ footer{
     width:30px;
     margin-left:10px;
 }
-
+```
 ### TUTORIAL
 
 Estrutura do documento
