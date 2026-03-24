@@ -28,14 +28,13 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
 ### CÓDIGO HTML
 
-```html
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="pt-br">
 
     <head>
         <meta charset="UTF-8">
         <title>Wireframe</title>
-		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
 
@@ -47,8 +46,8 @@ Este projeto tem como ação extensionista promover a integração entre os conh
     <div>Logo</div>
 
     <nav>
-        <a href="#">Sobre nós</a>
-        <a href="#">Produtos</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#produtos">Produtos</a>
     </nav>
 
     </header>
@@ -63,7 +62,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
 
     <!-- Seção Sobre nós -->
-    <section class="sobre">
+    <section class="sobre" id="sobre">
 
         <h1>Sobre nós</h1>
 
@@ -97,7 +96,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
 
     <!-- Seção Produtos -->
-    <section class="produtos">
+    <section class="produtos" id="produtos">
 
         <h1>Produtos</h1>
 
@@ -142,7 +141,7 @@ Este projeto tem como ação extensionista promover a integração entre os conh
 
     </footer>
 
-
+    <script src="script.js"></script>
     </body>
 </html>
 ```
@@ -227,6 +226,33 @@ footer{
     width:30px;
     margin-left:10px;
 }
+```
+
+### CÓDIGO JAVASCRIPT
+
+```// Seleciona todos os links do menu
+const links = document.querySelectorAll("nav a");
+
+// Para cada link, adiciona o evento de clique
+links.forEach(link => {
+    link.addEventListener("click", function(e) {
+
+        e.preventDefault(); // impede o comportamento padrão
+
+        // Pega o id da seção (ex: #sobre)
+        const id = this.getAttribute("href");
+
+        // Seleciona a seção correspondente
+        const section = document.querySelector(id);
+
+        // Faz o scroll suave até a seção
+        section.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+});
+
 ```
 ### TUTORIAL HTML
 
@@ -366,3 +392,60 @@ O CSS usa principalmente Flexbox para:
 <br>- alinhar elementos
 <br>- criar espaçamentos
 <br>- organizar o layout conforme o wireframe
+
+### TUTORIAL JAVASCRIPT
+
+Objetivo
+
+O JavaScript adiciona interatividade ao site, permitindo que o menu navegue até as seções com scroll suave.
+<br>
+<br>
+
+Seleção dos elementos
+
+O código seleciona todos os links do menu de navegação.
+
+Isso permite aplicar ações quando o usuário clicar em “Sobre nós” ou “Produtos”.
+<br>
+<br>
+
+Evento de clique
+
+Para cada link, é adicionado um evento de clique.
+
+Quando o usuário clica:
+<br>- o comportamento padrão do link é bloqueado
+<br>- o código assume o controle da navegação
+<br>
+<br>
+
+Identificação da seção
+
+O script pega o valor do href (ex: #sobre ou #produtos)
+e usa isso para encontrar a seção correspondente na página.
+<br>
+<br>
+
+Scroll suave
+
+A função scrollIntoView é usada para rolar a página até a seção desejada.
+
+A opção behavior: "smooth" faz com que o movimento seja suave, melhorando a experiência do usuário.
+<br>
+<br>
+
+Resultado
+
+Com esse JavaScript:
+<br>- o menu funciona corretamente
+<br>- a navegação fica mais fluida
+<br>- o site deixa de ser estático e ganha interatividade
+<br>
+<br>
+
+Resumo geral
+
+O JavaScript:
+<br>- captura cliques no menu
+<br>- identifica a seção clicada
+<br>- faz o scroll suave até ela
