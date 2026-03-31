@@ -1,169 +1,170 @@
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#fdfaf6;
-    color:#3e2c23;
-}
+        font-family: Arial, sans-serif;
+            margin:0;
+                background:#fdfaf6;
+                    color:#3e2c23;
+                    }
 
-/* HEADER */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#4b2e2b;
-    color:#fff;
-    position:sticky;
-    top:0;
-}
+                    /* HEADER */
+                    header{
+                        display:flex;
+                            justify-content:space-between;
+                                align-items:center;
+                                    padding:20px 40px;
+                                        background:#4b2e2b;
+                                            color:#fff;
+                                                position:sticky;
+                                                    top:0;
+                                                    }
 
-nav a{
-    margin-left:20px;
-    text-decoration:none;
-    color:#fff;
-    font-weight:bold;
-    transition:0.3s;
-}
+                                                    nav a{
+                                                        margin-left:20px;
+                                                            text-decoration:none;
+                                                                color:#fff;
+                                                                    font-weight:bold;
+                                                                        transition:0.3s;
+                                                                        }
 
-nav a:hover{
-    color:#d2b48c;
-}
+                                                                        nav a:hover{
+                                                                            color:#d2b48c;
+                                                                            }
 
-/* BANNER */
-.banner{
-    background:linear-gradient(to right, #6f4e37, #a67c52);
-    text-align:center;
-    padding:80px 20px;
-    color:#fff;
-}
+                                                                            /* BANNER */
+                                                                            .banner{
+                                                                                background:linear-gradient(to right, #6f4e37, #a67c52);
+                                                                                    text-align:center;
+                                                                                        padding:80px 20px;
+                                                                                            color:#fff;
+                                                                                            }
 
-.banner img{
-    width:120px;
-}
+                                                                                            .banner img{
+                                                                                                width:120px;
+                                                                                                }
 
-/* SOBRE */
-.sobre{
-    padding:60px 20px;
-}
+                                                                                                /* SOBRE */
+                                                                                                .sobre{
+                                                                                                    padding:60px 20px;
+                                                                                                    }
 
-.sobre h1{
-    text-align:center;
-}
+                                                                                                    .sobre h1{
+                                                                                                        text-align:center;
+                                                                                                        }
 
-.sobre-conteudo{
-    display:flex;
-    gap:40px;
-    max-width:1000px;
-    margin:auto;
-}
+                                                                                                        .sobre-conteudo{
+                                                                                                            display:flex;
+                                                                                                                gap:40px;
+                                                                                                                    max-width:1000px;
+                                                                                                                        margin:auto;
+                                                                                                                        }
 
-.textos{
-    display:flex;
-    gap:20px;
-}
+                                                                                                                        .textos{
+                                                                                                                            display:flex;
+                                                                                                                                gap:20px;
+                                                                                                                                }
 
-.textos div{
-    background:#fff;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
+                                                                                                                                .textos div{
+                                                                                                                                    background:#fff;
+                                                                                                                                        padding:20px;
+                                                                                                                                            border-radius:10px;
+                                                                                                                                                box-shadow:0 4px 10px rgba(0,0,0,0.1);
+                                                                                                                                                }
 
-/* PRODUTOS */
-.produtos{
-    padding:60px 20px;
-    background:#f5e9dc;
-}
+                                                                                                                                                /* PRODUTOS */
+                                                                                                                                                .produtos{
+                                                                                                                                                    padding:60px 20px;
+                                                                                                                                                        background:#f5e9dc;
+                                                                                                                                                        }
 
-.produtos h1{
-    text-align:center;
-}
+                                                                                                                                                        .produtos h1{
+                                                                                                                                                            text-align:center;
+                                                                                                                                                            }
 
-/* FILTROS */
-.filtros{
-    text-align:center;
-    margin-top:20px;
-}
+                                                                                                                                                            /* FILTROS */
+                                                                                                                                                            .filtros{
+                                                                                                                                                                text-align:center;
+                                                                                                                                                                    margin-top:20px;
+                                                                                                                                                                    }
 
-.filtros button{
-    margin:10px;
-    padding:10px 20px;
-    border:none;
-    background:#6f4e37;
-    color:#fff;
-    border-radius:20px;
-    cursor:pointer;
-}
+                                                                                                                                                                    .filtros button{
+                                                                                                                                                                        margin:10px;
+                                                                                                                                                                            padding:10px 20px;
+                                                                                                                                                                                border:none;
+                                                                                                                                                                                    background:#6f4e37;
+                                                                                                                                                                                        color:#fff;
+                                                                                                                                                                                            border-radius:20px;
+                                                                                                                                                                                                cursor:pointer;
+                                                                                                                                                                                                }
 
-.filtros button:hover{
-    background:#4b2e2b;
-}
+                                                                                                                                                                                                .filtros button:hover{
+                                                                                                                                                                                                    background:#4b2e2b;
+                                                                                                                                                                                                    }
 
-/* CARDS */
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:40px;
-    flex-wrap:wrap;
-}
+                                                                                                                                                                                                    /* CARDS */
+                                                                                                                                                                                                    .cards{
+                                                                                                                                                                                                        display:flex;
+                                                                                                                                                                                                            justify-content:center;
+                                                                                                                                                                                                                gap:30px;
+                                                                                                                                                                                                                    margin-top:40px;
+                                                                                                                                                                                                                        flex-wrap:wrap;
+                                                                                                                                                                                                                        }
 
-.card{
-    text-align:center;
-    background:#fff;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
+                                                                                                                                                                                                                        .card{
+                                                                                                                                                                                                                            text-align:center;
+                                                                                                                                                                                                                                background:#fff;
+                                                                                                                                                                                                                                    padding:20px;
+                                                                                                                                                                                                                                        border-radius:15px;
+                                                                                                                                                                                                                                            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+                                                                                                                                                                                                                                                transition:0.3s;
+                                                                                                                                                                                                                                                }
 
-.card:hover{
-    transform:translateY(-5px);
-}
+                                                                                                                                                                                                                                                .card:hover{
+                                                                                                                                                                                                                                                    transform:translateY(-5px);
+                                                                                                                                                                                                                                                    }
 
-.box{
-    width:150px;
-    height:150px;
-    background:#d2b48c;
-    border-radius:10px;
-    margin-bottom:10px;
-}
+                                                                                                                                                                                                                                                    .box{
+                                                                                                                                                                                                                                                        width:150px;
+                                                                                                                                                                                                                                                            height:150px;
+                                                                                                                                                                                                                                                                background:#d2b48c;
+                                                                                                                                                                                                                                                                    border-radius:10px;
+                                                                                                                                                                                                                                                                        margin-bottom:10px;
+                                                                                                                                                                                                                                                                        }
 
-/* FOOTER */
-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#4b2e2b;
-    color:#fff;
-    flex-wrap:wrap;
-}
+                                                                                                                                                                                                                                                                        /* FOOTER */
+                                                                                                                                                                                                                                                                        footer{
+                                                                                                                                                                                                                                                                            display:flex;
+                                                                                                                                                                                                                                                                                justify-content:space-between;
+                                                                                                                                                                                                                                                                                    align-items:center;
+                                                                                                                                                                                                                                                                                        padding:20px 40px;
+                                                                                                                                                                                                                                                                                            background:#4b2e2b;
+                                                                                                                                                                                                                                                                                                color:#fff;
+                                                                                                                                                                                                                                                                                                    flex-wrap:wrap;
+                                                                                                                                                                                                                                                                                                    }
 
-/* ÍCONES VISÍVEIS */
-.redes img{
-    width:30px;
-    margin-left:10px;
-}
+                                                                                                                                                                                                                                                                                                    /* ÍCONES VISÍVEIS */
+                                                                                                                                                                                                                                                                                                    .redes img{
+                                                                                                                                                                                                                                                                                                        width:30px;
+                                                                                                                                                                                                                                                                                                            margin-left:10px;
+                                                                                                                                                                                                                                                                                                            }
 
-/* RESPONSIVO */
-@media(max-width:768px){
+                                                                                                                                                                                                                                                                                                            /* RESPONSIVO */
+                                                                                                                                                                                                                                                                                                            @media(max-width:768px){
 
-    header{
-        flex-direction:column;
-    }
+                                                                                                                                                                                                                                                                                                                header{
+                                                                                                                                                                                                                                                                                                                        flex-direction:column;
+                                                                                                                                                                                                                                                                                                                            }
 
-    .sobre-conteudo{
-        flex-direction:column;
-        text-align:center;
-    }
+                                                                                                                                                                                                                                                                                                                                .sobre-conteudo{
+                                                                                                                                                                                                                                                                                                                                        flex-direction:column;
+                                                                                                                                                                                                                                                                                                                                                text-align:center;
+                                                                                                                                                                                                                                                                                                                                                    }
 
-    .textos{
-        flex-direction:column;
-    }
+                                                                                                                                                                                                                                                                                                                                                        .textos{
+                                                                                                                                                                                                                                                                                                                                                                flex-direction:column;
+                                                                                                                                                                                                                                                                                                                                                                    }
 
-    footer{
-        flex-direction:column;
-        text-align:center;
-    }
+                                                                                                                                                                                                                                                                                                                                                                        footer{
+                                                                                                                                                                                                                                                                                                                                                                                flex-direction:column;
+                                                                                                                                                                                                                                                                                                                                                                                        text-align:center;
+                                                                                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                                                                                            }
 }
