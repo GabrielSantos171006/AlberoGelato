@@ -22,3 +22,26 @@ links.forEach(link => {
 
     });
 });
+
+
+// FEATURE: FILTRO DE PRODUTOS
+const botoes = document.querySelectorAll(".filtros button");
+const cards = document.querySelectorAll(".card");
+
+botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+
+        const filtro = botao.getAttribute("data-filter");
+
+        cards.forEach(card => {
+            const categoria = card.getAttribute("data-category");
+
+            if(filtro === "all" || filtro === categoria){
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+    });
+});
