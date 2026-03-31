@@ -1,6 +1,8 @@
 body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin:0;
+    background:#fff8f5;
+    color:#333;
 }
 
 /* HEADER */
@@ -8,58 +10,103 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px;
-    background:#ddd;
+    padding:20px 40px;
+    background:#ffb6c1;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
     margin-left:20px;
     text-decoration:none;
-    color:black;
+    color:#fff;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffe4e1;
 }
 
 /* BANNER */
 .banner{
-    background:#ddd;
+    background:linear-gradient(to right, #ffd1dc, #ffe4e1);
     text-align:center;
-    padding:60px;
+    padding:80px 20px;
+}
+
+.banner img{
+    width:120px;
+    margin-bottom:20px;
 }
 
 /* SOBRE */
 .sobre{
-    padding:40px;
+    padding:60px 20px;
+}
+
+.sobre h1{
+    text-align:center;
+    margin-bottom:40px;
 }
 
 .sobre-conteudo{
     display:flex;
-    align-items:flex-start;
-    gap:60px;
+    align-items:center;
+    gap:40px;
+    max-width:1000px;
+    margin:auto;
 }
 
 .textos{
     display:flex;
-    gap:60px;
+    gap:40px;
+}
+
+.textos div{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* PRODUTOS */
 .produtos{
-    padding:40px;
+    padding:60px 20px;
+    background:#fff0f3;
+}
+
+.produtos h1{
+    text-align:center;
 }
 
 .cards{
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
+    gap:30px;
     margin-top:40px;
+    flex-wrap:wrap;
 }
 
 .card{
     text-align:center;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
 }
 
 .box{
     width:150px;
     height:150px;
-    border:3px solid #999;
+    border-radius:12px;
+    background:#ffd1dc;
     margin-bottom:10px;
 }
 
@@ -68,10 +115,43 @@ footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px;
+    padding:20px 40px;
+    background:#ffb6c1;
+    color:#fff;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
 .redes img{
     width:30px;
     margin-left:10px;
+    filter:brightness(0) invert(1);
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .sobre-conteudo{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .textos{
+        flex-direction:column;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+    }
 }
