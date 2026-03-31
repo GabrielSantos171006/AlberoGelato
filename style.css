@@ -1,4 +1,4 @@
-
+/* RESET BÁSICO */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,9 +48,9 @@ nav a:hover {
     color: #d2b48c;
 }
 
-/* BANNER */
+/* BANNER - AGORA COM COR SÓLIDA */
 .banner {
-    background: linear-gradient(rgba(75, 46, 43, 0.7), rgba(111, 78, 55, 0.7)), url('https://www.adgelati.com.br/wp-content/uploads/2019/07/alberodeigelati-mobile.png') center/cover;
+    background: #5c3a21; /* Cor sólida de chocolate quente */
     text-align: center;
     padding: 100px 20px;
     color: #fff;
@@ -69,7 +69,7 @@ nav a:hover {
 
 .banner h1 {
     font-size: 2.5rem;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Sombra mais suave */
 }
 
 /* SOBRE */
@@ -151,7 +151,8 @@ nav a:hover {
     transition: all 0.3s;
 }
 
-.filtros button:hover {
+.filtros button:hover, 
+.filtros button.ativo { /* Adicionado o estado ativo gerenciado pelo JS */
     background: #6f4e37;
     color: #fff;
 }
@@ -192,7 +193,6 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* Escondendo a box antiga já que agora usamos imagens reais */
 .box {
     display: none; 
 }
