@@ -14,9 +14,11 @@ links.forEach(link => {
         const section = document.querySelector(id);
 
         // Faz o scroll suave até a seção
-        section.scrollIntoView({
-            behavior: "smooth"
-        });
+        if(section){
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
 
     });
 });
