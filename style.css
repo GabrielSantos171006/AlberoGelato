@@ -1,170 +1,272 @@
-body{
-        font-family: Arial, sans-serif;
-            margin:0;
-                background:#fdfaf6;
-                    color:#3e2c23;
-                    }
 
-                    /* HEADER */
-                    header{
-                        display:flex;
-                            justify-content:space-between;
-                                align-items:center;
-                                    padding:20px 40px;
-                                        background:#4b2e2b;
-                                            color:#fff;
-                                                position:sticky;
-                                                    top:0;
-                                                    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-                                                    nav a{
-                                                        margin-left:20px;
-                                                            text-decoration:none;
-                                                                color:#fff;
-                                                                    font-weight:bold;
-                                                                        transition:0.3s;
-                                                                        }
+body {
+    font-family: Arial, sans-serif;
+    background: #fdfaf6;
+    color: #3e2c23;
+    line-height: 1.6;
+}
 
-                                                                        nav a:hover{
-                                                                            color:#d2b48c;
-                                                                            }
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #4b2e2b;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
-                                                                            /* BANNER */
-                                                                            .banner{
-                                                                                background:linear-gradient(to right, #6f4e37, #a67c52);
-                                                                                    text-align:center;
-                                                                                        padding:80px 20px;
-                                                                                            color:#fff;
-                                                                                            }
+header strong {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-                                                                                            .banner img{
-                                                                                                width:120px;
-                                                                                                }
+nav {
+    display: flex;
+    gap: 20px;
+}
 
-                                                                                                /* SOBRE */
-                                                                                                .sobre{
-                                                                                                    padding:60px 20px;
-                                                                                                    }
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-                                                                                                    .sobre h1{
-                                                                                                        text-align:center;
-                                                                                                        }
+nav a:hover {
+    color: #d2b48c;
+}
 
-                                                                                                        .sobre-conteudo{
-                                                                                                            display:flex;
-                                                                                                                gap:40px;
-                                                                                                                    max-width:1000px;
-                                                                                                                        margin:auto;
-                                                                                                                        }
+/* BANNER */
+.banner {
+    background: linear-gradient(rgba(75, 46, 43, 0.7), rgba(111, 78, 55, 0.7)), url('https://www.adgelati.com.br/wp-content/uploads/2019/07/alberodeigelati-mobile.png') center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
 
-                                                                                                                        .textos{
-                                                                                                                            display:flex;
-                                                                                                                                gap:20px;
-                                                                                                                                }
+.banner img {
+    width: 120px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
 
-                                                                                                                                .textos div{
-                                                                                                                                    background:#fff;
-                                                                                                                                        padding:20px;
-                                                                                                                                            border-radius:10px;
-                                                                                                                                                box-shadow:0 4px 10px rgba(0,0,0,0.1);
-                                                                                                                                                }
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
 
-                                                                                                                                                /* PRODUTOS */
-                                                                                                                                                .produtos{
-                                                                                                                                                    padding:60px 20px;
-                                                                                                                                                        background:#f5e9dc;
-                                                                                                                                                        }
+/* SOBRE */
+.sobre {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-                                                                                                                                                        .produtos h1{
-                                                                                                                                                            text-align:center;
-                                                                                                                                                            }
+.sobre h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #4b2e2b;
+}
 
-                                                                                                                                                            /* FILTROS */
-                                                                                                                                                            .filtros{
-                                                                                                                                                                text-align:center;
-                                                                                                                                                                    margin-top:20px;
-                                                                                                                                                                    }
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
-                                                                                                                                                                    .filtros button{
-                                                                                                                                                                        margin:10px;
-                                                                                                                                                                            padding:10px 20px;
-                                                                                                                                                                                border:none;
-                                                                                                                                                                                    background:#6f4e37;
-                                                                                                                                                                                        color:#fff;
-                                                                                                                                                                                            border-radius:20px;
-                                                                                                                                                                                                cursor:pointer;
-                                                                                                                                                                                                }
+.sobre-conteudo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
 
-                                                                                                                                                                                                .filtros button:hover{
-                                                                                                                                                                                                    background:#4b2e2b;
-                                                                                                                                                                                                    }
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
 
-                                                                                                                                                                                                    /* CARDS */
-                                                                                                                                                                                                    .cards{
-                                                                                                                                                                                                        display:flex;
-                                                                                                                                                                                                            justify-content:center;
-                                                                                                                                                                                                                gap:30px;
-                                                                                                                                                                                                                    margin-top:40px;
-                                                                                                                                                                                                                        flex-wrap:wrap;
-                                                                                                                                                                                                                        }
+.textos div {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #d2b48c;
+}
 
-                                                                                                                                                                                                                        .card{
-                                                                                                                                                                                                                            text-align:center;
-                                                                                                                                                                                                                                background:#fff;
-                                                                                                                                                                                                                                    padding:20px;
-                                                                                                                                                                                                                                        border-radius:15px;
-                                                                                                                                                                                                                                            box-shadow:0 4px 10px rgba(0,0,0,0.1);
-                                                                                                                                                                                                                                                transition:0.3s;
-                                                                                                                                                                                                                                                }
+.textos h3 {
+    margin-bottom: 10px;
+    color: #6f4e37;
+}
 
-                                                                                                                                                                                                                                                .card:hover{
-                                                                                                                                                                                                                                                    transform:translateY(-5px);
-                                                                                                                                                                                                                                                    }
+/* PRODUTOS */
+.produtos {
+    padding: 80px 20px;
+    background: #f5e9dc;
+}
 
-                                                                                                                                                                                                                                                    .box{
-                                                                                                                                                                                                                                                        width:150px;
-                                                                                                                                                                                                                                                            height:150px;
-                                                                                                                                                                                                                                                                background:#d2b48c;
-                                                                                                                                                                                                                                                                    border-radius:10px;
-                                                                                                                                                                                                                                                                        margin-bottom:10px;
-                                                                                                                                                                                                                                                                        }
+.produtos h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4b2e2b;
+    margin-bottom: 20px;
+}
 
-                                                                                                                                                                                                                                                                        /* FOOTER */
-                                                                                                                                                                                                                                                                        footer{
-                                                                                                                                                                                                                                                                            display:flex;
-                                                                                                                                                                                                                                                                                justify-content:space-between;
-                                                                                                                                                                                                                                                                                    align-items:center;
-                                                                                                                                                                                                                                                                                        padding:20px 40px;
-                                                                                                                                                                                                                                                                                            background:#4b2e2b;
-                                                                                                                                                                                                                                                                                                color:#fff;
-                                                                                                                                                                                                                                                                                                    flex-wrap:wrap;
-                                                                                                                                                                                                                                                                                                    }
+/* FILTROS */
+.filtros {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-                                                                                                                                                                                                                                                                                                    /* ÍCONES VISÍVEIS */
-                                                                                                                                                                                                                                                                                                    .redes img{
-                                                                                                                                                                                                                                                                                                        width:30px;
-                                                                                                                                                                                                                                                                                                            margin-left:10px;
-                                                                                                                                                                                                                                                                                                            }
+.filtros button {
+    margin: 5px;
+    padding: 10px 25px;
+    border: 2px solid #6f4e37;
+    background: transparent;
+    color: #6f4e37;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 
-                                                                                                                                                                                                                                                                                                            /* RESPONSIVO */
-                                                                                                                                                                                                                                                                                                            @media(max-width:768px){
+.filtros button:hover {
+    background: #6f4e37;
+    color: #fff;
+}
 
-                                                                                                                                                                                                                                                                                                                header{
-                                                                                                                                                                                                                                                                                                                        flex-direction:column;
-                                                                                                                                                                                                                                                                                                                            }
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-                                                                                                                                                                                                                                                                                                                                .sobre-conteudo{
-                                                                                                                                                                                                                                                                                                                                        flex-direction:column;
-                                                                                                                                                                                                                                                                                                                                                text-align:center;
-                                                                                                                                                                                                                                                                                                                                                    }
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-                                                                                                                                                                                                                                                                                                                                                        .textos{
-                                                                                                                                                                                                                                                                                                                                                                flex-direction:column;
-                                                                                                                                                                                                                                                                                                                                                                    }
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
 
-                                                                                                                                                                                                                                                                                                                                                                        footer{
-                                                                                                                                                                                                                                                                                                                                                                                flex-direction:column;
-                                                                                                                                                                                                                                                                                                                                                                                        text-align:center;
-                                                                                                                                                                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                                                                                                                                                                            }
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Escondendo a box antiga já que agora usamos imagens reais */
+.box {
+    display: none; 
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4b2e2b;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background: #4b2e2b;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+}
+
+.redes img {
+    width: 30px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+    filter: invert(1);
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-conteudo img {
+        max-width: 100%;
+    }
+
+    .textos {
+        flex-direction: column;
+    }
+
+    .textos div {
+        border-left: none;
+        border-top: 5px solid #d2b48c;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .redes img {
+        margin: 0 10px;
+    }
 }
