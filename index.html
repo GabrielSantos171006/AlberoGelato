@@ -12,7 +12,7 @@
 <!-- Cabeçalho com logo e menu -->
 <header>
 
-    <div><strong>Gelato</strong></div>
+    <div><strong>Gelato 🤎</strong></div>
 
     <nav>
         <a href="#sobre">Sobre nós</a>
@@ -27,7 +27,7 @@
 
     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
 
-    <h1>Os melhores gelatos da cidade</h1>
+    <h1>Gelatos artesanais premium 🍦</h1>
 
 </section>
 
@@ -45,18 +45,12 @@
 
             <div>
                 <h3>História</h3>
-
-                <p>
-                Nossa gelateria nasceu com a paixão por criar sabores únicos e artesanais, trazendo o verdadeiro gelato italiano para você.
-                </p>
+                <p>Inspirados nas gelaterias italianas, trazemos sabores autênticos e uma experiência única.</p>
             </div>
 
             <div>
                 <h3>Técnicas</h3>
-
-                <p>
-                Utilizamos ingredientes naturais e técnicas tradicionais para garantir cremosidade, sabor intenso e qualidade em cada colher.
-                </p>
+                <p>Produção artesanal com ingredientes selecionados e textura extremamente cremosa.</p>
             </div>
 
         </div>
@@ -71,21 +65,28 @@
 
     <h1>Produtos</h1>
 
+    <!-- Filtro -->
+    <div class="filtros">
+        <button data-filter="all">Todos</button>
+        <button data-filter="fruta">Frutas</button>
+        <button data-filter="chocolate">Chocolate</button>
+    </div>
+
     <div class="cards">
 
-        <div class="card">
+        <div class="card" data-category="fruta">
             <div class="box"></div>
             <p>Morango</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="chocolate">
             <div class="box"></div>
-            <p>Chocolate</p>
+            <p>Chocolate Belga</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-category="fruta">
             <div class="box"></div>
-            <p>Pistache</p>
+            <p>Manga</p>
         </div>
 
     </div>
@@ -96,7 +97,7 @@
 <!-- Rodapé -->
 <footer>
 
-    <div><strong>Gelato</strong></div>
+    <div><strong>Gelato 🤎</strong></div>
 
     <div>
         Rua: Exemplo, 123 – CEP: 00000-000
