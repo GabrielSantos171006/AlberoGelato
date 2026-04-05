@@ -43,3 +43,12 @@ botoes.forEach(botao => {
         });
     });
 });
+
+// FEATURE 3: ALERTA DE WHATSAPP INDISPONÍVEL
+const btnWhatsapp = document.getElementById('whatsapp-btn');
+
+if (btnWhatsapp) {
+    btnWhatsapp.addEventListener('click', () => {
+        alert("Não disponível no momento");
+    });
+}
