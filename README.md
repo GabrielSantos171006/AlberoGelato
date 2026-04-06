@@ -107,9 +107,15 @@ Este projeto tem como ação extensionista promover a integração entre os conh
         </div>
         
         <div class="redes">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            <a href="https://www.instagram.com/albero_br/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            
+            <a href="https://www.facebook.com/albero.br/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" id="whatsapp-btn" style="cursor: pointer;">
         </div>
     </footer>
 
@@ -397,7 +403,8 @@ footer {
 
 ### CÓDIGO JAVASCRIPT
 
-```// FEATURE 1: SCROLL SUAVE
+```
+// FEATURE 1: SCROLL SUAVE
 const links = document.querySelectorAll("nav a");
 
 links.forEach(link => {
@@ -442,6 +449,15 @@ botoes.forEach(botao => {
         });
     });
 });
+
+// FEATURE 3: ALERTA DE WHATSAPP INDISPONÍVEL
+const btnWhatsapp = document.getElementById('whatsapp-btn');
+
+if (btnWhatsapp) {
+    btnWhatsapp.addEventListener('click', () => {
+        alert("Não disponível no momento");
+    });
+}
 ```
 
 ### TUTORIAL HTML
