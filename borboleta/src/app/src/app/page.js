@@ -1,4 +1,5 @@
 'use client';
+import styles from "./page.module.css";
 
 import { useState } from 'react';
 // Se você for usar o CSS global, o layout.js já deve estar importando o globals.css.
@@ -39,17 +40,17 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="banner">
+      <section className={styles.banner}>
         <img src="https://www.adgelati.com.br/wp-content/uploads/2019/07/alberodeigelati-mobile.png" alt="Logo Gelateria" />
         <h1>Gelatos artesanais premium</h1>
       </section>
 
-      <section className="sobre" id="sobre">
+      <section className={styles.sobre} id={styles.sobre}>
         <h1>Sobre nós</h1>
-        <div className="sobre-conteudo">
+        <div className={styles.sobre-conteudo}>
           <img src="https://revistamenu.com.br/wp-content/uploads/sites/24/2024/03/albero-dei-gelati-rua-dos-pinheiros-bruno-geraldi-1.jpg" alt="Interior da Gelateria" />
           
-          <div className="textos">
+          <div className={styles.textos}>
             <div>
               <h3>História</h3>
               <p>Nascemos do desejo de elevar o sorvete a uma obra de arte gastronômica. Mais do que uma gelateria, somos um laboratório de sabores. Buscamos incansavelmente a combinação perfeita entre o clássico e o contemporâneo para surpreender os paladares mais exigentes.</p>
@@ -63,35 +64,35 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="produtos" id="produtos">
+      <section className={styles.produtos} id={styles.produtos}>
         <h1>Produtos</h1>
         
-        <div className="filtros">
+        <div className={styles.filtros}>
           <button 
-            className={filtroAtivo === 'all' ? 'ativo' : ''} 
+            className={filtroAtivo === {styles.all} ? {styles.ativo} : ''} 
             onClick={() => setFiltroAtivo('all')}
           >
             Todos
           </button>
           <button 
-            className={filtroAtivo === 'fruta' ? 'ativo' : ''} 
+            className={filtroAtivo === {styles.fruta} ? {styles.ativo} : ''} 
             onClick={() => setFiltroAtivo('fruta')}
           >
             Frutas
           </button>
           <button 
-            className={filtroAtivo === 'chocolate' ? 'ativo' : ''} 
+            className={filtroAtivo === {styles.chocolate} ? {styles.ativo} : ''} 
             onClick={() => setFiltroAtivo('chocolate')}
           >
             Chocolate
           </button>
         </div>
 
-        <div className="cards">
+        <div className={styles.cards}>
           {produtosFiltrados.map((produto) => (
-            <div className="card" key={produto.id}>
+            <div className={styles.card} key={produto.id}>
               <img src={produto.img} alt={produto.alt} />
-              <div className="box"></div>
+              <div className={styles.box}></div>
               <p>{produto.nome}</p>
             </div>
           ))}
@@ -104,7 +105,7 @@ export default function Home() {
           Rua: Joaquim Antunes, 391 – CEP: 05415-010
         </div>
         
-        <div className="redes">
+        <div className={styles.redes}>
           <a href="https://www.instagram.com/albero_br/" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
           </a>
