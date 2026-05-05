@@ -69,19 +69,19 @@ export default function Home() {
         
         <div className={styles.filtros}>
           <button 
-            className={filtroAtivo === {styles.all} ? {styles.ativo} : ''} 
+            className={`${styles.filtro} ${filtroAtivo === styles.all ? styles.ativo : ''}`} 
             onClick={() => setFiltroAtivo('all')}
           >
             Todos
           </button>
           <button 
-            className={filtroAtivo === {styles.fruta} ? {styles.ativo} : ''} 
+            className={`${styles.fruta} ${filtroAtivo === 'fruta' ? styles.ativo : ''}`}
             onClick={() => setFiltroAtivo('fruta')}
           >
             Frutas
           </button>
           <button 
-            className={filtroAtivo === {styles.chocolate} ? {styles.ativo} : ''} 
+            lassName={`${filtroAtivo === 'chocolate' ? styles.ativo : ''}`} 
             onClick={() => setFiltroAtivo('chocolate')}
           >
             Chocolate
