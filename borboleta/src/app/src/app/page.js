@@ -1,4 +1,6 @@
 import Header from '../components/Header';
+import Banner from '../components/Banner';
+import Sobre from '../components/Sobre';
 import SecaoProdutos from '../components/SecaoProdutos';
 
 export default function Home() {
@@ -6,7 +8,8 @@ export default function Home() {
     <>
       <Header />
       <main>
-        {/* Adicione seu componente Banner e Sobre aqui depois */}
+        <Banner />
+        <Sobre />
         <SecaoProdutos />
       </main>
     </>
