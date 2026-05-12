@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Header from '../../../components/Header';
-import { produtosData } from '../../../data/produtos';
+import { produtosData } from '../../../components/data/produtos';
 
 // A prop "params" contém o que foi passado na URL
 export default function ProdutoDetalhe({ params }) {
