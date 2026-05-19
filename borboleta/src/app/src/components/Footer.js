@@ -1,3 +1,4 @@
+'use client';
 export default function Footer() {
   const handleWhatsappClick = () => {
     alert("Atendimento via WhatsApp indisponível no momento. Por favor, utilize o iFood!");
@@ -16,13 +17,13 @@ export default function Footer() {
           <p>Siga nossas redes:</p>
           <div className="iconesRedes">
             <a href="https://www.instagram.com/albero_br/" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
             </a>
             <a href="https://www.facebook.com/albero.br/" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+              <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" />
             </a>
             <img 
-              src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+              src="https://cdn-icons-png.flaticon.com/512/124/124034.png" 
               alt="WhatsApp" 
               style={{ cursor: 'pointer' }}
               onClick={handleWhatsappClick} 

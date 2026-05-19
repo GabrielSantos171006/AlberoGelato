@@ -2,7 +2,7 @@ export const produtosData = [
   { 
     id: 1, 
     category: 'fruta', 
-    img: 'https://images.unsplash.com/photo-1567206563066-11633932eedc?q=80&w=600', 
+    img: 'https://www.specialita.com/wp-content/uploads/2023/06/selecta-e-specialita-apostam-em-experiencia-sensorial-e-apresentam-inovacoes-em-estande-da-fispal-2023-375x250.jpeg', 
     nome: 'Fragola',
     preco: 'R$ 18,00',
     descricao: 'Feito com morangos frescos orgânicos selecionados a dedo. Uma explosão de sabor natural e muito refrescante.',
@@ -32,7 +32,7 @@ export const produtosData = [
   { 
     id: 4, 
     category: 'leite', 
-    img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=600', 
+    img: 'https://static.itdg.com.br/images/640-auto/eba5c51dd9d0776e6c2b3c1e2100313b/sorve-baixa.jpg', 
     nome: 'Café Branco',
     preco: 'R$ 20,00',
     descricao: 'Uma infusão inovadora onde os grãos de café especial maturam diretamente no leite fresco, extraindo o aroma puro do café sem alterar a cor clara do gelato.',
@@ -42,7 +42,7 @@ export const produtosData = [
   { 
     id: 5, 
     category: 'leite', 
-    img: 'https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?q=80&w=600', 
+    img: 'https://www.receiteria.com.br/wp-content/uploads/sorvete-cremoso-de-banana-com-whey-1-730x480.jpg', 
     nome: 'Banana com Crocante',
     preco: 'R$ 20,00',
     descricao: 'Gelato cremoso de banana caramelizada artesanalmente, combinado com pedaços crocantes de castanhas salpicadas.',
@@ -52,7 +52,7 @@ export const produtosData = [
   { 
     id: 6, 
     category: 'leite', 
-    img: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=600', 
+    img: 'https://claudia.abril.com.br/wp-content/uploads/2025/01/albero-dei-gelati-gelato-queijo-canastra-com-mel-e-castanha-de-caju.jpg?quality=70&strip=info&resize=1080,565&crop=1', 
     nome: 'Gelato Canastra',
     preco: 'R$ 22,00',
     descricao: 'Uma homenagem à gastronomia brasileira. Gelato suave feito com o autêntico Queijo da Canastra, ideal para combinar com doces de colher.',
@@ -62,7 +62,7 @@ export const produtosData = [
   { 
     id: 7, 
     category: 'leite', 
-    img: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?q=80&w=600', 
+    img: 'https://blog.docemalu.com.br/wp-content/uploads/2025/08/unnamed-18.jpg', 
     nome: 'Pistache',
     preco: 'R$ 24,00',
     descricao: 'O ouro verde das gelaterias. Feito com uma pasta pura de pistaches selecionados, resultando num sabor incrivelmente robusto e elegante.',
@@ -72,7 +72,7 @@ export const produtosData = [
   { 
     id: 8, 
     category: 'fruta', 
-    img: 'https://images.unsplash.com/photo-1560252813-c676679d494a?q=80&w=600', 
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Jp52Juavd3izgjJzlXk1QBhnHcjzBykTKA&s', 
     nome: 'Cambuci',
     preco: 'R$ 18,00',
     descricao: 'Sorbet refrescante feito com o fruto nativo Cambuci. Apresenta uma acidez cítrica perfeita e marcante para os paladares que adoram Sabores exóticos.',
@@ -82,7 +82,7 @@ export const produtosData = [
   { 
     id: 9, 
     category: 'leite', 
-    img: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=600', 
+    img: 'https://laranjalimanutricao.com/wp-content/uploads/2016/04/dsc_74171.jpg?w=1024', 
     nome: 'Spirulina',
     preco: 'R$ 20,00',
     descricao: 'Um gelato superalimento de tom azul-esverdeado natural. Une os benefícios nutricionais da spirulina a uma base cremosa de baunilha.',
@@ -92,7 +92,7 @@ export const produtosData = [
   { 
     id: 10, 
     category: 'leite', 
-    img: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=600', 
+    img: 'https://revistaoeste.com/oestegeral/wp-content/uploads/2026/05/Homemade_uvaia_ice_cream_prepara%E2%80%A6_202605150148-1024x576.jpg', 
     nome: 'Gelato Uvaia',
     preco: 'R$ 20,00',
     descricao: 'A perfeita união da cremosidade do leite com o toque aveludado e levemente ácido da Uvaia, fruta nativa da Mata Atlântica.',
