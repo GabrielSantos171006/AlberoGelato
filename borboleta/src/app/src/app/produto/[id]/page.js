@@ -2,28 +2,68 @@ import Link from 'next/link';
 import Header from '../../../components/Header';
 import { produtosData } from '../../../data/produtos';
 
-// A prop "params" contém o que foi passado na URL
-export default function ProdutoDetalhe({ params }) {
-  // Converte o ID da URL para número e busca no array
-  const produtoId = parseInt(params.id);
+// 1. Adicionamos a palavra 'async' antes da função
+export default async function ProdutoDetalhe({ params }) {
+  
+  // 2. Usamos 'await' para esperar o Next.js carregar os parâmetros da URL
+  const parametros = await params;
+  
+  // 3. Agora sim convertemos o ID para número e fazemos a busca
+  const produtoId = parseInt(parametros.id);
   const produto = produtosData.find(p => p.id === produtoId);
 
-  // Se o ID não existir, mostra mensagem de erro
+  // Se o ID não existir, mostra a mensagem de erro
   if (!produto) {
-    return <h1>Produto não encontrado</h1>;
+    return (
+      <>
+        <Header />
+        <main style={{ padding: '100px', textAlign: 'center' }}>
+          <h1>Produto não encontrado :(</h1>
+          <Link href="/">
+            <button style={{ marginTop: '20px', padding: '10px 20px', cursor: 'pointer' }}>
+              Voltar para a Home
+            </button>
+          </Link>
+        </main>
+      </>
+    );
   }
 
-  // Se o ID existir, renderiza a página com os dados dele
+  // Se encontrar, renderiza a página do produto
   return (
     <>
       <Header />
-      <main style={{ padding: '50px', textAlign: 'center' }}>
-        <img src={produto.img} alt={produto.nome} style={{ width: '300px' }} />
-        <h1>Gelato de {produto.nome}</h1>
-        <p>Categoria: {produto.category}</p>
+      <main style={{ padding: '50px', textAlign: 'center', background: '#fdfaf6', minHeight: '80vh' }}>
+        <img 
+          src={produto.img} 
+          alt={produto.nome} 
+          style={{ width: '300px', height: '300px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 8px 16px rgba(0,0,0,0.1)' }} 
+        />
+        <h1 style={{ color: '#4b2e2b', marginTop: '20px', fontSize: '2.5rem' }}>
+          Gelato de {produto.nome}
+        </h1>
+        <p style={{ color: '#6f4e37', fontSize: '1.2rem', fontWeight: 'bold' }}>
+          Categoria: {produto.category}
+        </p>
+        
+        <p style={{ maxWidth: '600px', margin: '20px auto', color: '#3e2c23' }}>
+          Uma deliciosa e refrescante opção artesanal feita com ingredientes selecionados. 
+          Perfeito para os amantes de gelatos premium da categoria {produto.category}.
+        </p>
         
         <Link href="/">
-          <button style={{ marginTop: '20px' }}>Voltar para Home</button>
+          <button style={{ 
+            marginTop: '30px', 
+            padding: '12px 25px', 
+            background: '#6f4e37', 
+            color: '#fff', 
+            border: 'none', 
+            borderRadius: '25px', 
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          }}>
+            &larr; Voltar para os sabores
+          </button>
         </Link>
       </main>
     </>
