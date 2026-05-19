@@ -122,4 +122,76 @@ footer {
         text-align: center;
         gap: 20px;
     }
+  /* MELHORIAS COMPLEMENTARES DO LAYOUT PREMIUM */
+.logoContainer strong {
+    font-size: 1.6rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+/* FOOTER ATUALIZADO */
+.footerConteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footerInfo strong {
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.footerInfo p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footerRedes {
+    text-align: right;
+}
+
+.iconesRedes {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.iconesRedes img {
+    width: 28px;
+    filter: invert(1);
+    transition: transform 0.3s;
+}
+
+.iconesRedes img:hover {
+    transform: scale(1.15);
+}
+
+.footerDireitos {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+@media(max-width: 768px) {
+    .footerConteudo {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footerRedes {
+        text-align: center;
+    }
+    .iconesRedes {
+        justify-content: center;
+    }
+}
 }
