@@ -29,12 +29,10 @@ export default async function ProdutoDetalhe({ params }) {
       
       <main style={{ padding: '40px 20px', maxWidth: '1000px', margin: '0 auto' }}>
         
-        {/* Botão de Voltar Discreto */}
         <Link href="/" style={{ textDecoration: 'none', color: '#6f4e37', fontWeight: 'bold', fontSize: '1.1rem' }}>
           &larr; Voltar para o menu
         </Link>
 
-        {/* Container Principal: Divide em duas colunas */}
         <div style={{ display: 'flex', gap: '40px', marginTop: '30px', flexWrap: 'wrap' }}>
           
           {/* Coluna 1: Imagem */}
@@ -65,7 +63,7 @@ export default async function ProdutoDetalhe({ params }) {
               alignSelf: 'flex-start',
               textTransform: 'uppercase'
             }}>
-              {produto.category}
+              A base de {produto.category === 'fruta' ? 'água' : 'leite'}
             </span>
 
             <h1 style={{ color: '#4b2e2b', fontSize: '3rem', margin: '15px 0' }}>
@@ -80,29 +78,36 @@ export default async function ProdutoDetalhe({ params }) {
               {produto.descricao}
             </p>
 
-            <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #6f4e37' }}>
+            <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #6f4e37', marginBottom: '25px' }}>
               <p style={{ marginBottom: '10px' }}>
                 <strong>Ingredientes:</strong> {produto.ingredientes}
               </p>
               <p>
-                <strong>Informações:</strong> <span style={{ color: '#d9534f' }}>{produto.alergenicos}</span>
+                <strong>Informações de Dieta:</strong> <span style={{ color: '#d9534f', fontWeight: 'bold' }}>{produto.alergenicos}</span>
               </p>
             </div>
 
-            <button style={{ 
-              marginTop: '30px', 
-              padding: '15px 30px', 
-              background: '#4b2e2b', 
-              color: '#fff', 
-              border: 'none', 
-              borderRadius: '8px', 
-              fontSize: '1.2rem',
-              fontWeight: 'bold',
-              cursor: 'pointer',
-              transition: 'background 0.3s'
-            }}>
-              Adicionar ao Carrinho
-            </button>
+            {/* BOTÃO DO IFOOD RECONFIGURADO */}
+            <a 
+              href="https://www.ifood.com.br/delivery/sao-paulo-sp/albero-dei-gelati---sorvete-italiano-pinheiros/dbc921ee-576d-427e-aa05-9f116a1f34f6" /* ⬅️ SUBSITUA ESTE LINK PELO LINK REAL DA LOJA */
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ 
+                textAlign: 'center',
+                textDecoration: 'none',
+                padding: '15px 30px', 
+                background: '#ea1d2c', /* Vermelho característico do iFood */
+                color: '#fff', 
+                borderRadius: '8px', 
+                fontSize: '1.2rem',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                boxShadow: '0 4px 10px rgba(234, 29, 44, 0.3)',
+                transition: 'background 0.3s'
+              }}
+            >
+              Pedir pelo iFood
+            </a>
 
           </div>
         </div>
