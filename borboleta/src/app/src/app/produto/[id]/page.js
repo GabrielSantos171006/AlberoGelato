@@ -2,17 +2,11 @@ import Link from 'next/link';
 import Header from '../../../components/Header';
 import { produtosData } from '../../../data/produtos';
 
-// 1. Adicionamos a palavra 'async' antes da função
 export default async function ProdutoDetalhe({ params }) {
-  
-  // 2. Usamos 'await' para esperar o Next.js carregar os parâmetros da URL
   const parametros = await params;
-  
-  // 3. Agora sim convertemos o ID para número e fazemos a busca
   const produtoId = parseInt(parametros.id);
   const produto = produtosData.find(p => p.id === produtoId);
 
-  // Se o ID não existir, mostra a mensagem de erro
   if (!produto) {
     return (
       <>
@@ -29,43 +23,90 @@ export default async function ProdutoDetalhe({ params }) {
     );
   }
 
-  // Se encontrar, renderiza a página do produto
   return (
-    <>
+    <div style={{ background: '#fdfaf6', minHeight: '100vh' }}>
       <Header />
-      <main style={{ padding: '50px', textAlign: 'center', background: '#fdfaf6', minHeight: '80vh' }}>
-        <img 
-          src={produto.img} 
-          alt={produto.nome} 
-          style={{ width: '300px', height: '300px', objectFit: 'cover', borderRadius: '15px', boxShadow: '0 8px 16px rgba(0,0,0,0.1)' }} 
-        />
-        <h1 style={{ color: '#4b2e2b', marginTop: '20px', fontSize: '2.5rem' }}>
-          Gelato de {produto.nome}
-        </h1>
-        <p style={{ color: '#6f4e37', fontSize: '1.2rem', fontWeight: 'bold' }}>
-          Categoria: {produto.category}
-        </p>
+      
+      <main style={{ padding: '40px 20px', maxWidth: '1000px', margin: '0 auto' }}>
         
-        <p style={{ maxWidth: '600px', margin: '20px auto', color: '#3e2c23' }}>
-          Uma deliciosa e refrescante opção artesanal feita com ingredientes selecionados. 
-          Perfeito para os amantes de gelatos premium da categoria {produto.category}.
-        </p>
-        
-        <Link href="/">
-          <button style={{ 
-            marginTop: '30px', 
-            padding: '12px 25px', 
-            background: '#6f4e37', 
-            color: '#fff', 
-            border: 'none', 
-            borderRadius: '25px', 
-            cursor: 'pointer',
-            fontWeight: 'bold'
-          }}>
-            &larr; Voltar para os sabores
-          </button>
+        {/* Botão de Voltar Discreto */}
+        <Link href="/" style={{ textDecoration: 'none', color: '#6f4e37', fontWeight: 'bold', fontSize: '1.1rem' }}>
+          &larr; Voltar para o menu
         </Link>
+
+        {/* Container Principal: Divide em duas colunas */}
+        <div style={{ display: 'flex', gap: '40px', marginTop: '30px', flexWrap: 'wrap' }}>
+          
+          {/* Coluna 1: Imagem */}
+          <div style={{ flex: '1', minWidth: '300px' }}>
+            <img 
+              src={produto.img} 
+              alt={`Gelato de ${produto.nome}`} 
+              style={{ 
+                width: '100%', 
+                height: '400px', 
+                objectFit: 'cover', 
+                borderRadius: '15px', 
+                boxShadow: '0 10px 20px rgba(0,0,0,0.1)' 
+              }} 
+            />
+          </div>
+
+          {/* Coluna 2: Informações */}
+          <div style={{ flex: '1', minWidth: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            
+            <span style={{ 
+              background: '#d2b48c', 
+              color: '#3e2c23', 
+              padding: '5px 15px', 
+              borderRadius: '20px', 
+              fontSize: '0.9rem', 
+              fontWeight: 'bold',
+              alignSelf: 'flex-start',
+              textTransform: 'uppercase'
+            }}>
+              {produto.category}
+            </span>
+
+            <h1 style={{ color: '#4b2e2b', fontSize: '3rem', margin: '15px 0' }}>
+              {produto.nome}
+            </h1>
+            
+            <h2 style={{ color: '#6f4e37', fontSize: '2rem', marginBottom: '20px' }}>
+              {produto.preco}
+            </h2>
+
+            <p style={{ color: '#3e2c23', fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '20px' }}>
+              {produto.descricao}
+            </p>
+
+            <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #6f4e37' }}>
+              <p style={{ marginBottom: '10px' }}>
+                <strong>Ingredientes:</strong> {produto.ingredientes}
+              </p>
+              <p>
+                <strong>Informações:</strong> <span style={{ color: '#d9534f' }}>{produto.alergenicos}</span>
+              </p>
+            </div>
+
+            <button style={{ 
+              marginTop: '30px', 
+              padding: '15px 30px', 
+              background: '#4b2e2b', 
+              color: '#fff', 
+              border: 'none', 
+              borderRadius: '8px', 
+              fontSize: '1.2rem',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              transition: 'background 0.3s'
+            }}>
+              Adicionar ao Carrinho
+            </button>
+
+          </div>
+        </div>
       </main>
-    </>
+    </div>
   );
 }
