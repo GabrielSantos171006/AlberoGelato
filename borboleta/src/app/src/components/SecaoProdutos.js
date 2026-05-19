@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import styles from '../app/page.module.css'; // Ajuste o caminho do CSS se necessário
-import { produtosData } from './data';
+import { produtosData } from '../data/produtos';
 
 export default function SecaoProdutos() {
   const [filtroAtivo, setFiltroAtivo] = useState('all');
