@@ -1,0 +1,242 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/* BANNER - AGORA COM COR SÓLIDA */
+.page_banner__UN_1L {
+    background: #5c3a21; /* Cor sólida de chocolate quente */
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.page_banner__UN_1L img {
+    width: 120px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
+
+.page_banner__UN_1L h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Sombra mais suave */
+}
+
+/* SOBRE */
+.page_sobre__ZlCfF {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page_sobre__ZlCfF h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #4b2e2b;
+}
+
+.page_sobre-conteudo__OtKBj {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.page_sobre-conteudo__OtKBj img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.page_textos__oTcq3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1;
+}
+
+.page_textos__oTcq3 div {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #d2b48c;
+}
+
+.page_textos__oTcq3 h3 {
+    margin-bottom: 10px;
+    color: #6f4e37;
+}
+
+/* PRODUTOS */
+.page_produtos__7YLg6 {
+    padding: 80px 20px;
+    background: #f5e9dc;
+}
+
+.page_produtos__7YLg6 h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4b2e2b;
+    margin-bottom: 20px;
+}
+
+.page_subtituloSecao__LB5y6 {
+    text-align: center;
+    color: #6f4e37;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* FILTROS */
+.page_filtros__W79Jm {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page_filtros__W79Jm button {
+    margin: 5px;
+    padding: 10px 25px;
+    border: 2px solid #6f4e37;
+    background: transparent;
+    color: #6f4e37;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.page_filtros__W79Jm button:hover, 
+.page_filtros__W79Jm button.page_ativo__FQUjS { 
+    background: #6f4e37;
+    color: #fff;
+}
+
+/* CARDS */
+.page_cards__Ff9Bq {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page_card__QV0Om {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page_card__QV0Om:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGEM DO CARD (CORRIGIDA) */
+.page_containerImagem__QLPm5 {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.page_containerImagem__QLPm5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.page_containerImagem__QLPm5 img:hover {
+    transform: scale(1.05); /* Dá um efeito legal de zoom na foto ao passar o mouse */
+}
+
+/* ESTILOS DOS TEXTOS E BOTÕES DENTRO DO CARD */
+.page_cardInfo__U2Lbp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 0 5px;
+}
+
+.page_tagCategoria__8b_Ni {
+    background: #f5e9dc;
+    color: #6f4e37;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.page_cardInfo__U2Lbp h3 {
+    color: #4b2e2b;
+    font-size: 1.4rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.page_precoCard__gFtnZ {
+    color: #6f4e37;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.page_btnVerMais__Tz9J4 {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background: #d2b48c;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+/* Efeito no botão quando o mouse passa por cima do card inteiro */
+.page_card__QV0Om:hover .page_btnVerMais__Tz9J4 {
+    background: #6f4e37;
+}
+
+/* RESPONSIVO EXCLUSIVO DAS CLASSES */
+@media(max-width: 768px) {
+    .page_banner__UN_1L h1 {
+        font-size: 2rem;
+    }
+
+    .page_sobre-conteudo__OtKBj {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page_sobre-conteudo__OtKBj img {
+        max-width: 100%;
+    }
+
+    .page_textos__oTcq3 {
+        flex-direction: column;
+    }
+
+    .page_textos__oTcq3 div {
+        border-left: none;
+        border-top: 5px solid #d2b48c;
+    }
+}
