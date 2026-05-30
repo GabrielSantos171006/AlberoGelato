@@ -9,9 +9,9 @@ export default function Header() {
         </Link>
       </div>
       <nav>
-        <a href="#sobre">Sobre nós</a>
-        <a href="#produtos">Sabores</a>
-        <a href="#contato">Contato</a>
+        <a href="/#sobre">Sobre nós</a>
+        <a href="/#produtos">Sabores</a>
+        <a href="/#contato">Contato</a>
       </nav>
     </header>
   );
