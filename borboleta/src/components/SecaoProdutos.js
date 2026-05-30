@@ -47,19 +47,23 @@ export default function SecaoProdutos() {
 
       <div className={styles.cards}>
         {produtosFiltrados.map((produto) => (
-          <Link href={`/produto/${produto.id}`} key={produto.id} style={{ textDecoration: 'none' }}>
-            <div className={styles.card}>
-              <div className={styles.containerImagem}>
-                <img src={produto.img} alt={produto.nome} />
-              </div>
-              <div className={styles.cardInfo}>
-                <span className={styles.tagCategoria}>
-                  {produto.category === 'fruta' ? 'água' : produto.category}
-                </span>
-                <h3>{produto.nome}</h3>
-                <p className={styles.precoCard}>{produto.preco}</p>
-                <span className={styles.btnVerMais}>Ver Detalhes</span>
-              </div>
+          /* O Link agora assume o papel do card, virando o filho direto do Flexbox */
+          <Link 
+            href={`/produto/${produto.id}`} 
+            key={produto.id} 
+            className={styles.card} 
+            style={{ textDecoration: 'none' }}
+          >
+            <div className={styles.containerImagem}>
+              <img src={produto.img} alt={produto.nome} />
+            </div>
+            <div className={styles.cardInfo}>
+              <span className={styles.tagCategoria}>
+                {produto.category === 'fruta' ? 'água' : produto.category}
+              </span>
+              <h3>{produto.nome}</h3>
+              <p className={styles.precoCard}>{produto.preco}</p>
+              <span className={styles.btnVerMais}>Ver Detalhes</span>
             </div>
           </Link>
         ))}
