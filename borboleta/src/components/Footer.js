@@ -31,6 +31,20 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* SEÇÃO DO MAPA */}
+      <div style={{ width: '100%', maxWidth: '1200px', margin: '20px auto 0', padding: '0 20px' }}>
+        <iframe 
+          src="https://maps.google.com/maps?q=Rua%20Joaquim%20Antunes,%20391,%20Pinheiros,%20Sao%20Paulo&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="250" 
+          style={{ border: 0, borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
       <div className="footerDireitos">
         <p>&copy; 2026 Albero Dei Gelati. Todos os direitos reservados.</p>
       </div>
