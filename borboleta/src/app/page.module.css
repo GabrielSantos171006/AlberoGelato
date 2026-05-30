@@ -1,3 +1,25 @@
+/* BOTÃO VOLTAR */
+.btnVoltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    border: 2px solid #f39c12; /* Cor alaranjada/amarela */
+    background: transparent;
+    color: #f39c12;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btnVoltar:hover {
+    background: #f39c12;
+    color: #fff;
+}
+
 /* BANNER - AGORA COM COR SÓLIDA */
 .banner {
     background: #5c3a21; /* Cor sólida de chocolate quente */
@@ -122,6 +144,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: stretch; /* ADICIONADO: Obriga todos os cartões na mesma linha a terem a mesma altura */
 }
 
 .card {
@@ -135,6 +158,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%; /* ADICIONADO: Garante que o fundo branco do cartão estica até ao limite da altura */
 }
 
 .card:hover {
@@ -170,6 +194,8 @@
     gap: 8px;
     width: 100%;
     padding: 10px 0 5px;
+    flex-grow: 1; /* ADICIONADO: Faz com que esta área ocupe todo o espaço livre restante no cartão */
+    justify-content: space-between; /* ADICIONADO: Distribui o espaço, empurrando o botão para o fundo */
 }
 
 .tagCategoria {
