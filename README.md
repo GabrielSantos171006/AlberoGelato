@@ -59,3 +59,48 @@ Arquivo responsável por armazenar as informações de todos os produtos (ID, ca
 **Caminho do arquivo:** `src/data/produtos.js`
 ```javascript
 [COLE AQUI O CÓDIGO DO ARQUIVO produtos.js]
+```
+---
+
+## ⚙️ API de Produtos
+
+O projeto inclui uma API interna desenvolvida utilizando os *Route Handlers* do Next.js (App Router) para fornecer os dados dos produtos para a interface. 
+
+Os códigos da API estão organizados dentro da pasta `src/app/api/produtos/`.
+
+### Endpoints Disponíveis
+
+Abaixo estão os detalhes de cada rota, seus métodos e exemplos de retornos.
+
+#### 1. Listar todos os produtos
+Retorna a lista completa de produtos cadastrados na nossa base de dados (mockada).
+
+* **URL:** `/api/produtos`
+* **Método:** `GET`
+* **Arquivo responsável:** `src/app/api/produtos/route.js`
+
+**Resposta de Sucesso:**
+* **Status Code:** `200 OK`
+* **Corpo da Resposta:** Array em formato JSON contendo todos os objetos de produtos.
+
+---
+
+#### 2. Buscar um produto específico por ID
+Busca os detalhes de um único produto através do parâmetro dinâmico de `id` passado na URL.
+
+* **URL:** `/api/produtos/:id` (Exemplo: `/api/produtos/1`)
+* **Método:** `GET`
+* **Arquivo responsável:** `src/app/api/produtos/[id]/route.js`
+* **Parâmetros de Rota:** `id` (Número inteiro)
+
+**Resposta de Sucesso:**
+* **Status Code:** `200 OK`
+* **Corpo da Resposta:** Objeto JSON contendo os dados do produto correspondente ao ID.
+
+**Resposta de Erro (Produto não encontrado):**
+* Caso o ID fornecido não exista na base de dados, a API retornará um erro amigável.
+* **Status Code:** `404 Not Found`
+* **Corpo da Resposta:** ```json
+  {
+    "erro": "Produto não encontrado na base de dados."
+  }
